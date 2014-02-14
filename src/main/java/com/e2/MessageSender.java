@@ -25,7 +25,7 @@ import org.apache.http.message.BasicNameValuePair;
  * @author kxhtj529
  */
 public class MessageSender {
-    private static String[] colorPattern = {"#DFA","#0FF","#F0F", "#0F0", "#EE82EE"};
+    private static String[] colorPattern = {"#FFA500","#0FF","#F0F", "#0F0", "#EE82EE"};
     public static void send(String text){
         Map<String, String> json = new HashMap<String, String>();
         int second = Integer.parseInt(String.valueOf(System.currentTimeMillis()).substring(9,10));
