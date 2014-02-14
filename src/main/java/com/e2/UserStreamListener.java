@@ -85,9 +85,11 @@ public class UserStreamListener implements twitter4j.UserStreamListener{
 
     public void onStatus(Status status) {
         System.out.println(status.getUser().getName() + " : " + status.getText());
-        if(status.getText().startsWith("@oic___bot")){
+        if(status.getText().startsWith("@e2_oic")){
             try{
-                MessageSender.send(status.getText());
+                String text = status.getText().replaceAll("@e2_oic ", "");
+                //System.out.println(text);
+                MessageSender.send(text);
             }catch(Exception e){}
         }
     }

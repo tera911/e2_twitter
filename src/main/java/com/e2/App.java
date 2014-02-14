@@ -11,10 +11,10 @@ import twitter4j.conf.ConfigurationBuilder;
  *
  */
 public class App{
-    private static final String CONSUMER_KEY = "1qH0kXzsW4dckEIul4GBw";
-    private static final String CONSUMER_SECRET = "v7WJm9OqXFOsvgpWzMz53nNzJOTPsF5ZrnyBBuzEM";
-    private static final String ACCESS_TOKEN = "1528094874-5bjdDoqyhwd7pWPVnUBbdfCUKhHByYoZ3qREMzI";
-    private static final String ACCESS_TOKEN_SECRET = "LkNVfwb7PDXv3feGDGFIadZOPQhXkZLltkgDhMmjY";
+    private static final String CONSUMER_KEY = "oRNZnK40L9aW9GM8MmzQ";
+    private static final String CONSUMER_SECRET = "bb3ugSP22PesQWCcdQe0LZsw6mz4d67OONUcEE5xQ";
+    private static final String ACCESS_TOKEN = "2342215363-NDj6QHboPJ2dMjgn7Ry0L9InZ2ALAEPgxOkwUhC";
+    private static final String ACCESS_TOKEN_SECRET = "MsBLMLhBUp0w83qqq0lXDYPYQhQb47C90Pt7UtQeTdZ4z";
     
     public static void main(String[] args ){
         StatusListener listener = new StreamingListener();
@@ -28,6 +28,7 @@ public class App{
         TwitterStream twStream = new TwitterStreamFactory(configuration).getInstance();
         twStream.addListener(userStreamListener);
         
+        System.out.println("start user stream");
         twStream.user();
         
     }
