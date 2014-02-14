@@ -39,8 +39,8 @@ public class MessageSender {
             json.put("mmCall"   , "1");
             json.put("mType"    , "5");
             json.put("id"       , "tw_" + String.valueOf(System.currentTimeMillis()));
-            json.put("x"        , "20");
-            json.put("y"        , String.valueOf(20 + (second/2)));
+            json.put("x"        , "50");
+            json.put("y"        , second %2 == 0 ? "5" : "10");
             json.put("appearFade"   , "true");
             json.put("appearSlide"  , "2");
             json.put("appearSize"   , "1");
@@ -49,7 +49,7 @@ public class MessageSender {
             json.put("disappearSlide"  , "3");
             json.put("disappearSize"   , "2");
             
-            json.put("liveTime"    , "100");
+            json.put("liveTime"    , "150");
             
             json.put("rectColor"   , colorPattern[second/2]);
             json.put("text"        , text);
