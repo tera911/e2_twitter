@@ -40,7 +40,7 @@ public class MessageSender {
             json.put("mType"    , "5");
             json.put("id"       , "tw_" + String.valueOf(System.currentTimeMillis()));
             json.put("x"        , "50");
-            json.put("y"        , second %2 == 0 ? "5" : "10");
+            json.put("y"        , second %2 == 0 ? "5" : "95");
             json.put("appearFade"   , "true");
             json.put("appearSlide"  , "2");
             json.put("appearSize"   , "1");
